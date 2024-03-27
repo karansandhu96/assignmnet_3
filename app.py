@@ -18,7 +18,7 @@ def webhook():
     response = {"fulfillmentMessages": []}
 
     # Handle the chocolateBrands intent
-    if intent_name == "Chocolates":
+    if intent_name == "chocolate_brands":
         # List of chocolate brands
         chocolate_brands = ["Cadbury", "Lindt", "Kitkat", "Mars", "snickers"]
         # Building the response text
