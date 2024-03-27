@@ -20,9 +20,9 @@ def webhook():
     # Handle the chocolateBrands intent
     if intent_name == "chocolate_brands":
         # List of chocolate brands
-        chocolate_brands = ["Cadbury", "Lindt", "Kitkat", "Mars", "snickers"]
+        chocolate_brands = ["Cadbury", "Lindt", "Kitkat", "Mars", "Snickers"]  # Capitalize Snickers
         # Building the response text
-        response_text = "List of chocolate brands available in the market are: \n" + "\n".join([f"{i+1} - {item}" for i, item in enumerate(phone_brands)])
+        response_text = "List of chocolate brands available in the market are: \n" + "\n".join([f"{i+1} - {item}" for i, item in enumerate(chocolate_brands)])  # Corrected variable name
 
         # Set the response in the fulfillmentMessages format
         response["fulfillmentMessages"].append({
